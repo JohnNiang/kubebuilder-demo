@@ -1,0 +1,7 @@
+domain: devops.kubesphere
+repo: demo
+resources:
+- group: demo
+  kind: Demo
+  version: v1
+version: "2"
