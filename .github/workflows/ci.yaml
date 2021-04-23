@@ -21,4 +21,4 @@ jobs:
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_TOKEN }}
       - name: Build and push
-        run: make docker-build docker-push IMG=${{ secrets.DOCKER_IMAGE}}
+        run: make && make docker-build docker-push IMG=${{ secrets.DOCKER_IMAGE}}
